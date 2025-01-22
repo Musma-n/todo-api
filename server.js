@@ -8,7 +8,7 @@ const todos = [];
 
 app.use(express.json()); // To convert body into JSON
 app.use(
-  cors({ origin: ["http://localhost:5173"] }),
+  cors({ origin: ["http://localhost:5173","todo-list-with-backend.netlify.app/"] }),
 );
 
 app.get("/api/v1/todos", (request, response) => {
